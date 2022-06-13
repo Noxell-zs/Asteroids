@@ -53,7 +53,7 @@ class Settings:
 pygame.init()
 pygame.mixer.init()
 pygame.display.set_caption("Asteroids")
-pygame.display.set_icon(pygame.image.load("resources/icon.png"))
+pygame.display.set_icon(pygame.image.load("resources/icon.ico"))
 clock = pygame.time.Clock()
 base_surface = pygame.display.set_mode(Settings.screen_size())
 

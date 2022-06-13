@@ -27,4 +27,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: asteroids
-        path: dist/Asteroids
+        path: dist

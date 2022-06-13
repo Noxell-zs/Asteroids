@@ -195,9 +195,8 @@ def collision_analyze(first: SpaceObject, second: SpaceObject):
             (isinstance(second, Bullet) and isinstance(first, SpaceShip))):
         return
 
-    if (isinstance(first, SpaceShip | Bullet) or
-            isinstance(second, SpaceShip | Bullet) or
-            (isinstance(first, Bullet) and isinstance(second, Bullet))):
+    if (isinstance(first, SpaceShip) or isinstance(first, Bullet) or
+            isinstance(second, SpaceShip) or isinstance(second, Bullet)):
         first.destroyed = second.destroyed = True
         return
 
